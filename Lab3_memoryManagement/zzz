@@ -1,0 +1,57 @@
+Binary file core matches
+defs.h:// kalloc.c
+defs.h:char*           kalloc(void);
+kalloc.c:// call to kalloc().  (The exception is when
+kalloc.c:kalloc(void)
+kalloc.d:kalloc.o: kalloc.c /usr/include/stdc-predef.h types.h defs.h param.h \
+Binary file kalloc.o matches
+Binary file kernel matches
+kernel.asm:// call to kalloc().  (The exception is when
+kernel.asm:801024c0 <kalloc>:
+kernel.asm:kalloc(void)
+kernel.asm:801024c7:	75 1f                	jne    801024e8 <kalloc+0x28>
+kernel.asm:801024d0:	74 0e                	je     801024e0 <kalloc+0x20>
+kernel.asm:80102508:	74 08                	je     80102512 <kalloc+0x52>
+kernel.asm:80102514:	74 16                	je     8010252c <kalloc+0x6c>
+kernel.asm:    stack = kalloc();
+kernel.asm:80102f69:	e8 52 f5 ff ff       	call   801024c0 <kalloc>
+kernel.asm:  if((p = (struct pipe*)kalloc()) == 0)
+kernel.asm:80103291:	e8 2a f2 ff ff       	call   801024c0 <kalloc>
+kernel.asm:	if((p->kstack = kalloc()) == 0){
+kernel.asm:8010367a:	e8 41 ee ff ff       	call   801024c0 <kalloc>
+kernel.asm:    if(!alloc || (pgtab = (pte_t*)kalloc()) == 0)
+kernel.asm:80106af4:	e8 c7 b9 ff ff       	call   801024c0 <kalloc>
+kernel.asm:  mem = kalloc();
+kernel.asm:80106e3d:	e8 7e b6 ff ff       	call   801024c0 <kalloc>
+kernel.asm:  mem = kalloc();
+kernel.asm:    mem = kalloc();
+kernel.asm:80106fdf:	e8 dc b4 ff ff       	call   801024c0 <kalloc>
+kernel.asm:    mem = kalloc();
+kernel.asm:  if((pgdir = (pde_t*)kalloc()) == 0)
+kernel.asm:80107145:	e8 76 b3 ff ff       	call   801024c0 <kalloc>
+kernel.asm:    if((mem = kalloc()) == 0)
+kernel.asm:    if((mem = kalloc()) == 0)
+kernel.asm:801072a8:	e8 13 b2 ff ff       	call   801024c0 <kalloc>
+kernel.sym:00000000 kalloc.c
+kernel.sym:801024c0 kalloc
+main.c:    stack = kalloc();
+Binary file main.o matches
+Makefile:	kalloc.o\
+Notes:no kernel malloc(), just kalloc() for user core
+Notes:  proc_table_lock fd_table_lock kalloc_lock
+Notes:kalloc() can return 0; do callers handle this right?
+pipe.c:  if((p = (struct pipe*)kalloc()) == 0)
+Binary file pipe.o matches
+proc.c:	if((p->kstack = kalloc()) == 0){
+Binary file proc.o matches
+runoff.list:kalloc.c
+runoff.spec:even: kalloc.c  # mild preference
+vm.c:    if(!alloc || (pgtab = (pte_t*)kalloc()) == 0)
+vm.c:  if((pgdir = (pde_t*)kalloc()) == 0)
+vm.c:  mem = kalloc();
+vm.c:    mem = kalloc();
+vm.c:    if((mem = kalloc()) == 0)
+Binary file vm.o matches
+x:00000000 l    df *ABS*	00000000 kalloc.c
+x:801024c0 g     F .text	0000006e kalloc
+Binary file xv6.img matches

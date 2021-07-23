@@ -1,0 +1,29 @@
+
+kernel:     file format elf32-i386
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00006ea2  80100000  00100000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .rodata       000009ec  80106ec0  00106ec0  00007ec0  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data         00002516  80108000  00108000  00009000  2**12
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          0000af88  8010a520  0010a520  0000b516  2**5
+                  ALLOC
+  4 .debug_line   000025e8  00000000  00000000  0000b516  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0001051b  00000000  00000000  0000dafe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00003946  00000000  00000000  0001e019  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_aranges 000003a8  00000000  00000000  00021960  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000e64  00000000  00000000  00021d08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00005281  00000000  00000000  00022b6c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000700  00000000  00000000  00027ded  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .comment      00000029  00000000  00000000  000284ed  2**0
+                  CONTENTS, READONLY

@@ -1,0 +1,1000 @@
+ 1002  cat README
+ 1003  ls
+ 1004  ./kernel
+ 1005  ls
+ 1006  cd xv6/xv6/
+ 1007  ls
+ 1008  vim sysproc.c
+ 1009  tmux
+ 1010  tmux attach -t xv
+ 1011  ls
+ 1012  cd xv6/xv6/
+ 1013  ls
+ 1014  cd ..
+ 1015  ls
+ 1016  cp day3_TIL.md day4_TIL.md
+ 1017  vim day4_TIL.md 
+ 1018  ls
+ 1019  git add -A
+ 1020  git commit -m "0715"
+ 1021  git push -u origin main
+ 1022  ls
+ 1023  cd xv6/xv6/
+ 1024  ls
+ 1025  tmux ls
+ 1026  tmux attach -t 8
+ 1027  vim user.j
+ 1028  vim user.h
+ 1029  vim proc.c
+ 1030  ls
+ 1031  vim trap.c
+ 1032  vim proC.H
+ 1033  vim proc.h
+ 1034  ls
+ 1035  vin initcode.S
+ 1036  vim initcode.S
+ 1037  vim trap.c
+ 1038  vim initcode.S
+ 1039  vim proc.h
+ 1040  vim proc.c
+ 1041  grep 'sys_exit' *
+ 1042  vim proc.c
+ 1043  ls
+ 1044  vim proc.h
+ 1045  vim sysproc.c
+ 1046  ls
+ 1047  vim proc.c
+ 1048  ls
+ 1049  vim proc.h
+ 1050  ls
+ 1051  vim initcode.c
+ 1052  vim initcode.S
+ 1053  vim init.c
+ 1054  ls
+ 1055  vim sysproc.c
+ 1056  vim proc.c
+ 1057  vim sysproc.c
+ 1058  vim trap.h
+ 1059  vim traps.h 
+ 1060  clear
+ 1061  ls
+ 1062  vectors.S
+ 1063  vim vectors.S
+ 1064  ls
+ 1065  vim proc.h
+ 1066  vim trap.c
+ 1067  vim usertests.c
+ 1068  vim usertests.asm
+ 1069  vim wc.asm
+ 1070  vim kernel.asm 
+ 1071  vim sysproc.c
+ 1072  vim defs.h 
+ 1073  ls
+ 1074  vim sysproc.c
+ 1075  vim proc.h
+ 1076  ls
+ 1077  vim sysproc.c
+ 1078  vim proc.h
+ 1079  vim user.c
+ 1080  vim user.
+ 1081  vim user.h
+ 1082  grep exit
+ 1083  vim user.c
+ 1084  vim user.h
+ 1085  cd sysproc.c
+ 1086  vim sysproc.c
+ 1087  ls
+ 1088  grep 'exit()' *
+ 1089  vim defs.h 
+ 1090  grep 'wait()' *
+ 1091  vim defs.h 
+ 1092  vim proc.h
+ 1093  grep 'wait()' *
+ 1094  vim proc.c
+ 1095  grep 'wait()' *
+ 1096  s
+ 1097  ls
+ 1098  vim sysproc.
+ 1099  vim sysproc.c
+ 1100  grep 'wait()' *
+ 1101  vim proc.h
+ 1102  ls
+ 1103  make clean
+ 1104  ls
+ 1105  make
+ 1106  vim proh.h
+ 1107  rm proh.h 
+ 1108  vim proc.h
+ 1109  ls
+ 1110  make clean
+ 1111  make
+ 1112  vim proc.c
+ 1113  vim mytest.c
+ 1114  ls
+ 1115  make clean
+ 1116  make
+ 1117  vim kill.c
+ 1118  vim kernel.asm
+ 1119  vim init.c
+ 1120  vim proc.c
+ 1121  make clean
+ 1122  make
+ 1123  make clean
+ 1124  make
+ 1125  ls
+ 1126  vim proc.h
+ 1127  vim 
+ 1128  make clean
+ 1129  make
+ 1130  :wq
+ 1131  ls
+ 1132  make clean
+ 1133  make
+ 1134  make clean
+ 1135  make
+ 1136  vim proc.c
+ 1137  make clean
+ 1138  make
+ 1139  vim proc.c
+ 1140  make
+ 1141  vim proc.c
+ 1142  cd ../..
+ 1143  ls
+ 1144  cd ..
+ 1145  ls
+ 1146  cd audwns27
+ 1147  ls
+ 1148  cd xv6/xv6/
+ 1149  ls
+ 1150  make clean
+ 1151  make
+ 1152  vim usertests.c 
+ 1153  vim sh.c
+ 1154  vim proc.c
+ 1155  ls
+ 1156  vim sysproc.
+ 1157  vim sysproc.c
+ 1158  make clean
+ 1159  make
+ 1160  vim defs.h 
+ 1161  ls
+ 1162  make qemu-nox-gdb
+ 1163  make qemu-nox-gdb > a
+ 1164  vim a
+ 1165  exit
+ 1166  cd xv6/xv6/
+ 1167  kill
+ 1168  kill $(pgrep | qemu)
+ 1169  history
+ 1170  history >> a
+ 1171  ls
+ 1172  vim a
+ 1173  killall qemu-system-i386
+ 1174  ls
+ 1175  vim types.h
+ 1176  vim proc.c
+ 1177  vim proc.h
+ 1178  vim proc.c
+ 1179  vim xv6/xv6/
+ 1180  cd xv6/xv6/
+ 1181  ls
+ 1182  vim mytest.c 
+ 1183  ls
+ 1184  grep 'h'
+ 1185  vim mytest.c 
+ 1186  tmux
+ 1187  cd xv6/xv6/
+ 1188  ls
+ 1189  tmux ls
+ 1190  tmux attach -t 9
+ 1191  ls
+ 1192  make qemu-nox-gdb
+ 1193  vim user.h
+ 1194  make qemu-nox-gdb
+ 1195  us, int options). This system call must act like wait system call with the following additional properties: The system call must wait for a process (not necessary a child process) with a pid that equals to one provided by the pid argument. The return value must be the process id of the process that was terminated or -1 if this process does not exist or if an unexpected error occurred. We are required only to implement a blocking waitpid where the kernel prevents the current process from execution until a process with the given pid terminates.ls
+ 1196  ls
+ 1197  tmux ls
+ 1198  tmux attach -t 8
+ 1199  vom printf.c
+ 1200  vim printf.c
+ 1201  vim a.c
+ 1202  gcc a.c
+ 1203  vim a.c
+ 1204  gcc a.c
+ 1205  ./a.out
+ 1206  vim a.c
+ 1207  gcc a.c
+ 1208  ./a.out
+ 1209  rm a.c
+ 1210  ls
+ 1211  vim uart.c
+ 1212  ls
+ 1213  make qemu-nox-gdb
+ 1214  vim console.c
+ 1215  vim x86.h
+ 1216  vim console.c
+ 1217  vim trap.c
+ 1218  vim entry.S
+ 1219  vim exit.c
+ 1220  ls
+ 1221  vim proc.c
+ 1222  ls
+ 1223  gdb -q
+ 1224  LS
+ 1225  ls
+ 1226  cd ../..
+ 1227  ls
+ 1228  cd xv6/
+ 1229  vim day5_TIL.md 
+ 1230  cat day5_TIL.md 
+ 1231  exit
+ 1232  ls
+ 1233  cd xv6/
+ 1234  ls
+ 1235  cp day3_TIL.md day5_TIL.md
+ 1236  ls
+ 1237  vim day5_TIL.md 
+ 1238  tmux ls
+ 1239  tmux attach -t 8
+ 1240  cat day5_TIL.md 
+ 1241  vim day5_TIL.md 
+ 1242  cat day5_TIL.md 
+ 1243  vim day5_TIL.md 
+ 1244  ls
+ 1245  git add -A
+ 1246  git commit -m "day5"
+ 1247  git push -u origin main
+ 1248  ls
+ 1249  cd ../..
+ 1250  ls
+ 1251  cd jongman/
+ 1252  ls
+ 1253  vim xv6/
+ 1254  cd xv6/
+ 1255  ls
+ 1256  vim proc.c
+ 1257  vls
+ 1258  vim ls
+ 1259  clear
+ 1260  ls
+ 1261  vim Makefile 
+ 1262  vim waitpidtest.c
+ 1263  cp waitpidtest.c ../../xv6/xv6/t.c
+ 1264  cd ../../xv6/xv6/
+ 1265  ls
+ 1266  vim t.c
+ 1267  cd ../.
+ 1268  cd ..
+ 1269  ls
+ 1270  cd OS/
+ 1271  LS
+ 1272  ls
+ 1273  cd pctest/
+ 1274  ls
+ 1275  vim pctestc
+ 1276  vim pctest.c
+ 1277  cd ..
+ 1278  ls
+ 1279  cd pfind/
+ 1280  ls
+ 1281  vim pfind
+ 1282  vim pfind.c
+ 1283  cd ../../xv6/xv6/
+ 1284  ls
+ 1285  vim t.c
+ 1286  ls
+ 1287  vim ../../jongman/xv6/waitpidtest.c
+ 1288  make clean
+ 1289  make
+ 1290  make qemu-nox-gdb
+ 1291  vim user.h
+ 1292  vim printf.c
+ 1293  vim ../../jongman/xv6/waitpidtest.c
+ 1294  make qemu-nox-gdb
+ 1295  vim ../../jongman/xv6/waitpidtest.c
+ 1296  vim proc.c
+ 1297  vim ../../jongman/xv6/waitpidtest.c
+ 1298  make clean
+ 1299  make
+ 1300  ls
+ 1301  make clean
+ 1302  make
+ 1303  make qemu-nox-gdb
+ 1304  make clean
+ 1305  make
+ 1306  make qemu-nox-gdb
+ 1307  vim proc.c
+ 1308  vim ../../jongman/xv6/waitpidtest.c
+ 1309  vim proc.c
+ 1310  vim ../../jongman/xv6/Makefile 
+ 1311  vim ../../jongman/xv6/statustest.c
+ 1312  vim Makefile 
+ 1313  make clena
+ 1314  make clean
+ 1315  make
+ 1316  make qemu-nox-gdb
+ 1317  vim proc.c
+ 1318  vim ../../jongman/xv6/statustest.c
+ 1319  vim ../../jongman/xv6/waitpidtest.c
+ 1320  make clean
+ 1321  make
+ 1322  make qemu-nox-gdb
+ 1323  vim usys.S 
+ 1324  vim ../../jongman/xv6/sysproc.c
+ 1325  make clean
+ 1326  make
+ 1327  make clean
+ 1328  make
+ 1329  make clean
+ 1330  i
+ 1331  vim usys.S 
+ 1332  vim ../../jongman/xv6/sysproc.c
+ 1333  make clean
+ 1334  make
+ 1335  make qemu-nox-gdb
+ 1336  ls
+ 1337  make qemu-nox-gdb
+ 1338  grep "_cat" *
+ 1339  make qemu-nox-gdb
+ 1340  vim user.h
+ 1341  vim syscall.c
+ 1342  make clean
+ 1343  make
+ 1344  vim syscall.c
+ 1345  make clean
+ 1346  make
+ 1347  make qemu-nox-gdb
+ 1348  vim ../../jongman/xv6/
+ 1349  cd ../../jongman/xv6/
+ 1350  ls
+ 1351  make clean
+ 1352  make
+ 1353  make qemu-nox-gdb
+ 1354  ls
+ 1355  vim init.asm
+ 1356  cd ../../OS
+ 1357  ls
+ 1358  cd fork/
+ 1359  ls
+ 1360  vim fork.c
+ 1361  ls
+ 1362  vim fork2.c
+ 1363  vim fork3.c
+ 1364  vim fork4.c
+ 1365  cd PS
+ 1366  cd ..
+ 1367  cd xv6/xv6/
+ 1368  ls
+ 1369  tmux ls
+ 1370  tmux new -s xv6
+ 1371  tmux
+ 1372  vim proc.c
+ 1373  vim mytest.c 
+ 1374  make celan
+ 1375  make clean
+ 1376  make
+ 1377  ls
+ 1378  vim mytest.c 
+ 1379  grep "printf" *
+ 1380  vim mytest.c 
+ 1381  make clean
+ 1382  make
+ 1383  vim mytest.
+ 1384  vim mytest.c
+ 1385  make qemu-nox-gdb
+ 1386  make clean
+ 1387  make
+ 1388  make qemu-nox-gdb
+ 1389  ls
+ 1390  vim mytest.
+ 1391  vim mytest.c
+ 1392  vim mytest.c 
+ 1393  gdb
+ 1394  ls
+ 1395  vim mytest.
+ 1396  vim mytest.c
+ 1397  vim Makefile 
+ 1398  make clean
+ 1399  make
+ 1400  make qemu-nox-gdb
+ 1401  vim mytest.
+ 1402  vim mytest.c
+ 1403  gdb -q
+ 1404  vim mytest.
+ 1405  vim mytest.c
+ 1406  vim sysproc.c
+ 1407  vim sysproc.c 
+ 1408  vim mytest.c
+ 1409  make qemu-nox-gdb
+ 1410  vim sysproc.c
+ 1411  make clean
+ 1412  make
+ 1413  ls
+ 1414  vim usys.S 
+ 1415  make clean
+ 1416  make
+ 1417  make qemu-nox-gdb
+ 1418  vim usys.S 
+ 1419  ls
+ 1420  gdb -q
+ 1421  vim mytest.c
+ 1422  make qemu-nox-gdb
+ 1423  ls
+ 1424  grep "zombie!" *
+ 1425  ls
+ 1426  make clean
+ 1427  make
+ 1428  ls
+ 1429  make qemu-nox-gdb
+ 1430  vim mytest
+ 1431  ls
+ 1432  mv mytest.c zz.c
+ 1433  ls
+ 1434  vim t.c
+ 1435  cp ../../jongman/xv6/waitpidtest.c mytest.c
+ 1436  ls
+ 1437  vim mytest.c
+ 1438  make qemu-nox-gdb
+ 1439  ls
+ 1440  vim zz.c
+ 1441  make clean
+ 1442  make
+ 1443  make qemu-nox-gdb
+ 1444  ls
+ 1445  rm mytest.c
+ 1446  mv zz.c mytest.c
+ 1447  make clean
+ 1448  make
+ 1449  make qemu-nox-gdb
+ 1450  vim mytest.c
+ 1451  make clean
+ 1452  make
+ 1453  make qemu-nox-gdb
+ 1454  vim mytest.c
+ 1455  make clean
+ 1456  make
+ 1457  make qemu-nix-gdb
+ 1458  make qemu-nox-gdb
+ 1459  vim mytest.
+ 1460  vim mytest.c
+ 1461  make clean
+ 1462  make
+ 1463  make qemu-nox-gdb
+ 1464  ls
+ 1465  vim mytest.c
+ 1466  make clean
+ 1467  make
+ 1468  make qemu-nox-gdb
+ 1469  ls
+ 1470  vim mytest.c
+ 1471  make clean
+ 1472  make
+ 1473  make clean
+ 1474  make
+ 1475  make qemu-nox-gdb
+ 1476  ls
+ 1477  vim mytest.c
+ 1478  make qemu-nox-gdb
+ 1479  vim mytest.
+ 1480  vim mytest.c
+ 1481  make clean
+ 1482  make
+ 1483  make qemu-nox-gdb
+ 1484  vim proc.c
+ 1485  make clean
+ 1486  make
+ 1487  make qemu-nox-gdb
+ 1488  vim mytest.c
+ 1489  make clean
+ 1490  make
+ 1491  make qemu-nox-gdb
+ 1492  vim mytest.
+ 1493  vim mytest.c
+ 1494  make clean
+ 1495  make
+ 1496  make qemu-nox-gdb
+ 1497  ls
+ 1498  vim test2.c
+ 1499  rm test2.c 
+ 1500  cp mytest.c test2.c
+ 1501  ls
+ 1502  vim test2.c 
+ 1503  ls
+ 1504  vim proc.c
+ 1505  ls
+ 1506  tmux attach -t xv
+ 1507  ls
+ 1508  cd xv6/xv6/
+ 1509  ls
+ 1510  tmux ls
+ 1511  tmux attach -t 1
+ 1512  LS
+ 1513  ls
+ 1514  cd xv6/
+ 1515  ls
+ 1516  vim day6_TIL.md 
+ 1517  cat day6_TIL.md 
+ 1518  git add -A
+ 1519  git commit -m "day6"
+ 1520  git push -u origin main
+ 1521  cat day6_TIL.md 
+ 1522  vim day6
+ 1523  vim day6_TIL.md 
+ 1524  ls
+ 1525  git add -A
+ 1526  git commit -m "day6"
+ 1527  git push -u origin main
+ 1528  ls
+ 1529  cd xv6/xv6/
+ 1530  ls
+ 1531  vim proc.c
+ 1532  vim mytest.c
+ 1533  make clean
+ 1534  make
+ 1535  ls
+ 1536  gdb -q
+ 1537  vim init.c
+ 1538  ls
+ 1539  gdb -q
+ 1540  ls
+ 1541  make clean
+ 1542  make
+ 1543  gdb -q
+ 1544  ls
+ 1545  gdb -q
+ 1546  i
+ 1547  vim ../../jongman/xv6/waitpidtest.c
+ 1548  gdb -q
+ 1549  vim ../../jongman/xv6/waitpidtest.c
+ 1550  ls
+ 1551  gdb -q
+ 1552  vim init.c
+ 1553  ls
+ 1554  vim ../../jongman/xv6/waitpidtest.c
+ 1555  ls
+ 1556  gdb -q
+ 1557  ls
+ 1558  gdb -q
+ 1559  ls
+ 1560  vim ../../jongman/xv6/waitpidtest.c
+ 1561  ls
+ 1562  gdb -q
+ 1563  vim ../../jongman/xv6/waitpidtest.c
+ 1564  gdb -q
+ 1565  ls
+ 1566  vim ../../jongman/xv6/waitpidtest.c
+ 1567  vim proc.c
+ 1568  vim ../../jongman/xv6/proc.c
+ 1569  vim proc.c
+ 1570  ls
+ 1571  make
+ 1572  make clean
+ 1573  make
+ 1574  gdb -q
+ 1575  vim ../../jongman/xv6/proc.c
+ 1576  gdb -q
+ 1577  LS
+ 1578  ls
+ 1579  vim proc.c
+ 1580  ls
+ 1581  vim mytest.c
+ 1582  ls
+ 1583  vim user.h
+ 1584  vim proc.c
+ 1585  vim traps.h
+ 1586  grep "trapno" *
+ 1587  vim x86.h 
+ 1588  /IRQ
+ 1589  grep "IRQ_TIMER" *
+ 1590  vim traps.h
+ 1591  :Wq
+ 1592  vim proc.c
+ 1593  l
+ 1594  ls
+ 1595  make
+ 1596  vim proc.h
+ 1597  ls
+ 1598  grep *chpri" *
+ 1599  grep "chpri" *
+ 1600  vim proc.h
+ 1601  grep "getpid()" *
+ 1602  vim proc.c
+ 1603  ls
+ 1604  make clean
+ 1605  make
+ 1606  make qemu-nox-gdb
+ 1607  make
+ 1608  make clean
+ 1609  make
+ 1610  make qemu-nox-gdb
+ 1611  make qemu-nox- gdb
+ 1612  make qemu-nox-gdb
+ 1613  ls
+ 1614  make qemu-nox-gdb
+ 1615  make clean
+ 1616  make
+ 1617  ls
+ 1618  gdb -q
+ 1619  ls
+ 1620  gdb -q
+ 1621  ls
+ 1622  gdb -q
+ 1623  make clean 
+ 1624  make
+ 1625  make clean
+ 1626  make
+ 1627  make clean
+ 1628  make
+ 1629  ls
+ 1630  gdb -q
+ 1631  ls
+ 1632  grep "chpri" *
+ 1633  grep "chpri(" *
+ 1634  ls
+ 1635  make qemu-nox-gdb
+ 1636  make clean
+ 1637  make
+ 1638  make qemu-nox-gdb
+ 1639  make clean
+ 1640  make
+ 1641  make qemu-nox-gdb
+ 1642  ls
+ 1643  make clean
+ 1644  make
+ 1645  make qemu-nox-gdb
+ 1646  ls
+ 1647  vim pritest.c
+ 1648  vim proc.c
+ 1649  ls
+ 1650  cd ..
+ 1651  ls
+ 1652  cd ..
+ 1653  ls
+ 1654  cd xv6/xv6/
+ 1655  ls
+ 1656  vim proc.c
+ 1657  vim defs.h 
+ 1658  vim user.h
+ 1659  vim syscall.h
+ 1660  vim syscall.c
+ 1661  vim usys.S 
+ 1662  make clean
+ 1663  make
+ 1664  vim proc.c
+ 1665  make
+ 1666  vim sysproc.c
+ 1667  make
+ 1668  vim sysproc.c
+ 1669  make
+ 1670  vim pritest.c 
+ 1671  make clena
+ 1672  make clean 
+ 1673  make
+ 1674  ls
+ 1675  vim pritest.c
+ 1676  vim proc.c
+ 1677  vim user.h
+ 1678  vim defs.h 
+ 1679  vim sysproc.c
+ 1680  make clean
+ 1681  make
+ 1682  vim proc.c
+ 1683  make
+ 1684  vim proc.c
+ 1685  make clena
+ 1686  make clane
+ 1687  make clean
+ 1688  make
+ 1689  vim proc.c
+ 1690  make clean
+ 1691  make
+ 1692  vim pritest.c 
+ 1693  vim proc.c
+ 1694  grep "-1" * >> out
+ 1695  rm out
+ 1696  grep "-1" * >> out
+ 1697  ls
+ 1698  vim out
+ 1699  rm out
+ 1700  grep "-1" *
+ 1701  vim defs.h 
+ 1702  vim user.h
+ 1703  vim proc.c
+ 1704  vim proc.c'
+ 1705  vim proc.c
+ 1706  make clean
+ 1707  make
+ 1708  vim pritest.c 
+ 1709  make clean
+ 1710  maek
+ 1711  make
+ 1712  vim sysproc.c
+ 1713  vim pro.c
+ 1714  vim proc.c
+ 1715  vim sysproc.c
+ 1716  ls
+ 1717  vim usys.S 
+ 1718  vim pritest.c
+ 1719  make clean
+ 1720  make
+ 1721  vim pritest.c
+ 1722  ls
+ 1723  vim defs.h 
+ 1724  vim proc.c
+ 1725  vim x86.h 
+ 1726  vim usys.S 
+ 1727  vim syscall.h
+ 1728  make clena
+ 1729  make clean
+ 1730  make
+ 1731  vim proc.c
+ 1732  vim syscall.c
+ 1733  vim syscall.h
+ 1734  vim syscall.c
+ 1735  ls
+ 1736  vim sysproc.c
+ 1737  make clean
+ 1738  make
+ 1739  ls
+ 1740  vim sysproc.c
+ 1741  ls
+ 1742  vim defs.h 
+ 1743  vim pritest.c
+ 1744  vim proc.c
+ 1745  vim pritest.
+ 1746  vim pritest.c
+ 1747  ls
+ 1748  grep "swtch" *
+ 1749  vim proc.h
+ 1750  grep "context" *
+ 1751  vim kernel.c
+ 1752  vim kernel
+ 1753  ls
+ 1754  vim kernel.c
+ 1755  vim kernel.ld
+ 1756  vim kernel.asm
+ 1757  vim kernel.sym
+ 1758  grep "context" * >a
+ 1759  grep "context" * > a
+ 1760  grep "context" * >> a
+ 1761  grep "context" * >> out
+ 1762  ls
+ 1763  vim out
+ 1764  rm out
+ 1765  ls
+ 1766  rm a
+ 1767  grep struct context *
+ 1768  grep "struct context" *
+ 1769  vim defs.h 
+ 1770  grep "swtch" * >> out
+ 1771  vim out
+ 1772  vim kernel.asm
+ 1773  grep "switchuvm" *
+ 1774  grep "switchkvm" *
+ 1775  vim vm.c
+ 1776  grep "time" *
+ 1777  grep "time" * >> out
+ 1778  rm out
+ 1779  grep "time" * >> out
+ 1780  vim out
+ 1781  grep "timee" * >> out
+ 1782  grep "timer" *
+ 1783  vim defs.h 
+ 1784  ls
+ 1785  vim init.c
+ 1786  grep "timer" *
+ 1787  grep "timerinit" *
+ 1788  rm out
+ 1789  grep "time" *
+ 1790  vim trap.c
+ 1791  grep "time" * >> out
+ 1792  vim out
+ 1793  vim lapic.
+ 1794  vim lapic.c
+ 1795  grep "yield" *
+ 1796  vim defs.h 
+ 1797  vim trap.c
+ 1798  ls
+ 1799  vim proc.h
+ 1800  vim syscall.c
+ 1801  vim syscall.h
+ 1802  vim sysproc.c
+ 1803  ls
+ 1804  vim sysproc.d
+ 1805  vim trap.c
+ 1806  vim traps.h
+ 1807  vim uart.c
+ 1808  vim usys.S 
+ 1809  vim vm.c
+ 1810  vim x86.h 
+ 1811  vim proc.c
+ 1812  ls
+ 1813  vim proc.c
+ 1814  vim user.h
+ 1815  vim sysproc.c
+ 1816  ls
+ 1817  vim proc.c
+ 1818  make
+ 1819  make clean
+ 1820  make
+ 1821  make clean
+ 1822  make
+ 1823  ls
+ 1824  make clean
+ 1825  make
+ 1826  vim pritest.c
+ 1827  ls
+ 1828  cp mytest.c pritest.c
+ 1829  ls
+ 1830  vim Makefile 
+ 1831  ls
+ 1832  make
+ 1833  make clean
+ 1834  make
+ 1835  ls
+ 1836  vim pritest.c 
+ 1837  make clean
+ 1838  mke
+ 1839  make
+ 1840  vim pritest.
+ 1841  vim pritest.c
+ 1842  vim mytest.c
+ 1843  vim pritest.c
+ 1844  make
+ 1845  make clean
+ 1846  make
+ 1847  vim pritest.
+ 1848  vim pritest.c
+ 1849  grep "acquire
+ 1850  grep "acquire" *
+ 1851  grep "panic: acquire" *
+ 1852  ls
+ 1853  vim lapic.c
+ 1854  grep "panic" * >> out
+ 1855  rm out
+ 1856  grep "panic" * >> out
+ 1857  vim out
+ 1858  vim spinlock.c
+ 1859  grep "holding" *
+ 1860  vim spinlock.c
+ 1861  make clean
+ 1862  make
+ 1863  vim pritest.c
+ 1864  make clean
+ 1865  make
+ 1866  vim pritest.
+ 1867  vim pritest.c
+ 1868  make clean
+ 1869  make
+ 1870  vim proc.c
+ 1871  make clean
+ 1872  make
+ 1873  ls
+ 1874  vim proc.c
+ 1875  vim defs.h 
+ 1876  vim proc.h
+ 1877  vim user.h
+ 1878  vim sysproc.c
+ 1879  make clean
+ 1880  make
+ 1881  vim proc.c
+ 1882  make clean
+ 1883  make
+ 1884  vim proc.c
+ 1885  ls
+ 1886  vim proc.c
+ 1887  make qemu-nox-gdb
+ 1888  ls
+ 1889  make
+ 1890  make clean
+ 1891  make
+ 1892  make qemu-nox-gdb
+ 1893  make clean
+ 1894  make
+ 1895  makq qemu-nox-gdb
+ 1896  make qemu-nox-gdb
+ 1897  ls
+ 1898  make clean
+ 1899  make
+ 1900  make qemu-nox-gdb
+ 1901  make clean
+ 1902  make
+ 1903  make qemu-nox-gdb
+ 1904  make clean
+ 1905  amke
+ 1906  make
+ 1907  make qemu-nox-gdb
+ 1908  ls
+ 1909  cd xv6/xv6/
+ 1910  ls
+ 1911  vim mytest.c 
+ 1912  vim Makefile 
+ 1913  ls
+ 1914  vim Makefile 
+ 1915  vim mytest.c
+ 1916  cd ..
+ 1917  ls
+ 1918  cp day5_TIL.md day6_TIL.md
+ 1919  ls
+ 1920  cd xv6/
+ 1921  ls
+ 1922  gdb -q
+ 1923  ls
+ 1924  gdb -q
+ 1925  ls
+ 1926  gdb -q
+ 1927  exit
+ 1928  cd xv6/xv6/
+ 1929  ls
+ 1930  make qemu-nox-gdb
+ 1931  ls
+ 1932  rm t.c
+ 1933  make qemu-nox-gdb
+ 1934  ls
+ 1935  make qemu-nox-gdb
+ 1936  ls
+ 1937  make-nox-gdb
+ 1938  make qemu-nox-gdb
+ 1939  make clean
+ 1940  make
+ 1941  make qemu-nox-gdb
+ 1942  ls
+ 1943  make clean
+ 1944  make
+ 1945  make qemu-nox-gdb
+ 1946  vim defs.h 
+ 1947  ls
+ 1948  make qemu-nox-gdb
+ 1949  ls
+ 1950  make qemu-nox-gdb
+ 1951  ls
+ 1952  make qemu-nox-gdb
+ 1953  make qumu-nox-gdb
+ 1954  make qemu-nox-gdb
+ 1955  ls
+ 1956  make qemu-nox-gdb
+ 1957  vim pritest.c 
+ 1958  make qemu-nox-gdb
+ 1959  vim pritest.c 
+ 1960  make qemu-nox-gdb
+ 1961  exit
+ 1962  ls
+ 1963  cd xv6/xv6/
+ 1964  ls
+ 1965  tmux ls
+ 1966  tmux attach -t 1
+ 1967  ls
+ 1968  tmux ls
+ 1969  tmux attach -t xv6
+ 1970  ls
+ 1971  vim schedtest.c 
+ 1972  gdb -q
+ 1973  ls
+ 1974  make qemu-nox-gdb
+ 1975  make clean
+ 1976  make
+ 1977  make qemu-nox-gdb
+ 1978  ls
+ 1979  cd xv6/xv6/
+ 1980  tmux
+ 1981  exit
+ 1982  ls
+ 1983  gdb -q
+ 1984  ls
+ 1985  gdb -q
+ 1986  ls
+ 1987  ls
+ 1988  vim proc.c
+ 1989  ls
+ 1990  make qemu-nox-gdb
+ 1991  make clean
+ 1992  make
+ 1993  make qemu-nox-gdb
+ 1994  LS
+ 1995  tmux ls
+ 1996  cd xv6/xv6/
+ 1997  tmux new -s xv6
+ 1998  ls
+ 1999  vim proc.c
+ 2000  l
+ 2001  history >> a

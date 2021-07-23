@@ -1,0 +1,560 @@
+
+kernel:     file format elf32-i386
+kernel
+architecture: i386, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0010000c
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x80100000 paddr 0x00100000 align 2**12
+         filesz 0x000078ac memsz 0x000078ac flags r-x
+    LOAD off    0x00009000 vaddr 0x80108000 paddr 0x00108000 align 2**12
+         filesz 0x00002516 memsz 0x0000d4a8 flags rw-
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**4
+         filesz 0x00000000 memsz 0x00000000 flags rwx
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00006ea2  80100000  00100000  00001000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .rodata       000009ec  80106ec0  00106ec0  00007ec0  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data         00002516  80108000  00108000  00009000  2**12
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          0000af88  8010a520  0010a520  0000b516  2**5
+                  ALLOC
+  4 .debug_line   000025e8  00000000  00000000  0000b516  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0001051b  00000000  00000000  0000dafe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00003946  00000000  00000000  0001e019  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_aranges 000003a8  00000000  00000000  00021960  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_str    00000e64  00000000  00000000  00021d08  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_loc    00005281  00000000  00000000  00022b6c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000700  00000000  00000000  00027ded  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .comment      00000029  00000000  00000000  000284ed  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+80100000 l    d  .text	00000000 .text
+80106ec0 l    d  .rodata	00000000 .rodata
+80108000 l    d  .data	00000000 .data
+8010a520 l    d  .bss	00000000 .bss
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .comment	00000000 .comment
+00000000 l    df *ABS*	00000000 bio.c
+00000000 l    df *ABS*	00000000 console.c
+8010a520 l     O .bss	00000038 cons
+8010a558 l     O .bss	00000004 panicked
+80100410 l     F .text	0000016e consputc
+80100580 l     F .text	00000074 printint
+80106f30 l     O .rodata	00000011 digits.1530
+00000000 l    df *ABS*	00000000 exec.c
+00000000 l    df *ABS*	00000000 file.c
+00000000 l    df *ABS*	00000000 fs.c
+80101110 l     F .text	0000006d bfree
+80101180 l     F .text	00000104 balloc
+80101290 l     F .text	000000cc iget
+80101360 l     F .text	000000d1 bmap
+80101c60 l     F .text	000001bc namex
+00000000 l    df *ABS*	00000000 ide.c
+80101f20 l     F .text	000000d2 idestart
+8010a580 l     O .bss	00000034 idelock
+8010a560 l     O .bss	00000004 havedisk1
+8010a564 l     O .bss	00000004 idequeue
+00000000 l    df *ABS*	00000000 ioapic.c
+00000000 l    df *ABS*	00000000 kalloc.c
+00000000 l    df *ABS*	00000000 kbd.c
+8010a5b4 l     O .bss	00000004 shift.1371
+80107260 l     O .rodata	00000100 shiftcode
+80107160 l     O .rodata	00000100 togglecode
+80107140 l     O .rodata	00000010 charcode.1372
+80108200 l     O .data	00000100 normalmap
+80108100 l     O .data	00000100 shiftmap
+80108000 l     O .data	00000100 ctlmap
+00000000 l    df *ABS*	00000000 lapic.c
+00000000 l    df *ABS*	00000000 log.c
+80102a00 l     F .text	0000009a install_trans
+80102aa0 l     F .text	0000005c write_head
+00000000 l    df *ABS*	00000000 main.c
+80102e40 l     F .text	0000003f mpmain
+80102e80 l     F .text	0000001a mpenter
+00000000 l    df *ABS*	00000000 mp.c
+80102fc0 l     F .text	00000074 mpsearch1
+00000000 l    df *ABS*	00000000 picirq.c
+00000000 l    df *ABS*	00000000 pipe.c
+00000000 l    df *ABS*	00000000 proc.c
+80103600 l     F .text	000000c4 allocproc
+8010a000 l     O .data	00000004 first.1572
+8010a5b8 l     O .bss	00000004 initproc
+80107520 l     O .rodata	00000018 states.1598
+00000000 l    df *ABS*	00000000 sleeplock.c
+00000000 l    df *ABS*	00000000 spinlock.c
+00000000 l    df *ABS*	00000000 string.c
+00000000 l    df *ABS*	00000000 syscall.c
+801075a0 l     O .rodata	00000058 syscalls
+00000000 l    df *ABS*	00000000 sysfile.c
+801048a0 l     F .text	00000191 create
+80104a40 l     F .text	0000004f argfd.constprop.0
+00000000 l    df *ABS*	00000000 sysproc.c
+00000000 l    df *ABS*	00000000 trap.c
+00000000 l    df *ABS*	00000000 uart.c
+80105980 l     F .text	0000002f uartgetc
+8010a5bc l     O .bss	00000004 uart
+801059b0 l     F .text	00000049 uartputc.part.0
+00000000 l    df *ABS*	00000000 vm.c
+80106580 l     F .text	0000007a walkpgdir
+80106600 l     F .text	00000087 mappages
+80106690 l     F .text	0000009c deallocuvm.part.0
+8010a420 l     O .data	00000040 kmap
+80100270 g     F .text	00000111 consoleread
+801064cf g       .text	00000000 vector242
+80105f26 g       .text	00000000 vector119
+8010000c g       .text	00000000 entry
+80105e06 g       .text	00000000 vector87
+80105dfd g       .text	00000000 vector86
+80104630 g     F .text	0000003c safestrcpy
+80104be0 g     F .text	00000047 sys_close
+8010653b g       .text	00000000 vector251
+80105e2a g       .text	00000000 vector91
+80105c20 g       .text	00000000 vector33
+8010610f g       .text	00000000 vector162
+80103d30 g     F .text	00000046 yield
+80112680 g     O .bss	000000c4 log
+80112640 g     O .bss	0000003c kmem
+80106373 g       .text	00000000 vector213
+80105ec3 g       .text	00000000 vector108
+80105a00 g     F .text	000000bb uartinit
+80105c7a g       .text	00000000 vector43
+80102750 g     F .text	0000001b lapiceoi
+80106133 g       .text	00000000 vector165
+80106223 g       .text	00000000 vector185
+80102220 g     F .text	000000a6 ioapicinit
+80105f02 g       .text	00000000 vector115
+80100f60 g     F .text	0000008c fileread
+80105f41 g       .text	00000000 vector122
+80105500 g     F .text	00000047 sys_sbrk
+80112760 g     O .bss	00000001 ioapicid
+801060c7 g       .text	00000000 vector156
+801064f3 g       .text	00000000 vector245
+80112634 g     O .bss	00000004 ioapic
+80106253 g       .text	00000000 vector189
+80105b44 g       .text	00000000 vector7
+80105d1c g       .text	00000000 vector61
+80105bcf g       .text	00000000 vector24
+80105ede g       .text	00000000 vector111
+801062d7 g       .text	00000000 vector200
+80105d52 g       .text	00000000 vector67
+80105fef g       .text	00000000 vector138
+80105d91 g       .text	00000000 vector74
+80103b40 g     F .text	000000b1 sched
+80104500 g     F .text	00000052 memmove
+80105cf8 g       .text	00000000 vector57
+80104840 g     F .text	0000005c syscall
+8010637f g       .text	00000000 vector214
+80105e72 g       .text	00000000 vector99
+801037c0 g     F .text	0000001b cpuid
+80101a60 g     F .text	00000127 writei
+80106013 g       .text	00000000 vector141
+80105480 g     F .text	00000009 sys_fork
+8010b5c0 g     O .bss	00004958 bcache
+80106187 g       .text	00000000 vector172
+801064c3 g       .text	00000000 vector241
+80104220 g     F .text	00000050 getcallerpcs
+80105110 g     F .text	0000005c sys_mkdir
+80106553 g       .text	00000000 vector253
+80105b20 g       .text	00000000 vector3
+80105b17 g       .text	00000000 vector2
+80101b90 g     F .text	00000015 namecmp
+8010641b g       .text	00000000 vector227
+8010634f g       .text	00000000 vector210
+80104800 g     F .text	00000037 argstr
+801063f7 g       .text	00000000 vector224
+80105c68 g       .text	00000000 vector41
+80100660 g     F .text	000001aa cprintf
+80100df0 g     F .text	00000045 filedup
+80101ee0 g     F .text	00000015 namei
+80105bb4 g       .text	00000000 vector21
+80100040 g     F .text	00000082 binit
+801061c3 g       .text	00000000 vector177
+80105f1d g       .text	00000000 vector118
+80105d6d g       .text	00000000 vector70
+80105d64 g       .text	00000000 vector69
+80106493 g       .text	00000000 vector237
+80105d37 g       .text	00000000 vector64
+80105bea g       .text	00000000 vector27
+80105fa7 g       .text	00000000 vector132
+8010622f g       .text	00000000 vector186
+80104b00 g     F .text	00000067 sys_read
+801063a3 g       .text	00000000 vector217
+801046a0 g     F .text	00000037 fetchint
+80106c10 g     F .text	00000077 setupkvm
+80104560 g     F .text	00000006 memcpy
+80106b90 g     F .text	00000076 freevm
+80105b0e g       .text	00000000 vector1
+801061cf g       .text	00000000 vector178
+80105c4d g       .text	00000000 vector38
+80102310 g     F .text	0000008f kfree
+8010649f g       .text	00000000 vector238
+80103740 g     F .text	00000077 mycpu
+801017b0 g     F .text	0000015b iput
+80105fb3 g       .text	00000000 vector133
+80105d88 g       .text	00000000 vector73
+80106037 g       .text	00000000 vector144
+8010655f g       .text	00000000 vector254
+80101440 g     F .text	00000037 readsb
+8010a004 g     O .data	00000004 nextpid
+80105e84 g       .text	00000000 vector101
+8010635b g       .text	00000000 vector211
+80103040 g     F .text	000001d1 mpinit
+8010619f g       .text	00000000 vector174
+801064db g       .text	00000000 vector243
+80100d60 g     F .text	0000001a fileinit
+80104200 g     F .text	0000001b initlock
+80105f77 g       .text	00000000 vector128
+80106e10 g     F .text	00000092 copyout
+80105dd0 g       .text	00000000 vector81
+80103d80 g     F .text	000000c0 sleep
+80102770 g     F .text	00000005 microdelay
+80105b72 g       .text	00000000 vector13
+80105cc2 g       .text	00000000 vector51
+80105b89 g       .text	00000000 vector16
+8010ff20 g     O .bss	0000008c input
+801064b7 g       .text	00000000 vector240
+80105cdd g       .text	00000000 vector54
+80105ba2 g       .text	00000000 vector19
+80105e33 g       .text	00000000 vector92
+801064e7 g       .text	00000000 vector244
+80101930 g     F .text	0000002b stati
+80106007 g       .text	00000000 vector140
+801054b0 g     F .text	00000037 sys_kill
+80105c8c g       .text	00000000 vector45
+80105dbe g       .text	00000000 vector79
+80103350 g     F .text	0000009a pipeclose
+80106433 g       .text	00000000 vector229
+801060df g       .text	00000000 vector158
+80104c30 g     F .text	00000047 sys_fstat
+80100600 g     F .text	0000005f consolewrite
+80105c56 g       .text	00000000 vector39
+80106157 g       .text	00000000 vector168
+80102c10 g     F .text	00000159 end_op
+80105c32 g       .text	00000000 vector35
+80105ef0 g       .text	00000000 vector113
+801023a0 g     F .text	0000004b freerange
+80105f5c g       .text	00000000 vector125
+80106a30 g     F .text	00000121 allocuvm
+80105642 g       .text	00000000 trapret
+80106397 g       .text	00000000 vector216
+80105d2e g       .text	00000000 vector63
+80105be1 g       .text	00000000 vector26
+80106283 g       .text	00000000 vector193
+80102630 g     F .text	000000f2 lapicinit
+801062a7 g       .text	00000000 vector196
+80106343 g       .text	00000000 vector209
+80105b29 g       .text	00000000 vector4
+8010616f g       .text	00000000 vector170
+8010a5c0 g     O .bss	00001000 stack
+80105fd7 g       .text	00000000 vector136
+80105b5d g       .text	00000000 vector10
+8010631f g       .text	00000000 vector206
+80101760 g     F .text	00000041 iunlock
+80105550 g     F .text	000000ae sys_sleep
+8010656b g       .text	00000000 vector255
+801061f3 g       .text	00000000 vector181
+80105d0a g       .text	00000000 vector59
+80105df4 g       .text	00000000 vector85
+80105deb g       .text	00000000 vector84
+8010620b g       .text	00000000 vector183
+801060eb g       .text	00000000 vector159
+80106367 g       .text	00000000 vector212
+80104c80 g     F .text	0000014b sys_link
+80105c9e g       .text	00000000 vector47
+80106427 g       .text	00000000 vector228
+80105c71 g       .text	00000000 vector42
+80105ef9 g       .text	00000000 vector114
+80106dd0 g     F .text	00000031 uva2ka
+801061ab g       .text	00000000 vector175
+8010602b g       .text	00000000 vector143
+80100d80 g     F .text	00000069 filealloc
+80103f30 g     F .text	00000056 wakeup
+80105f8f g       .text	00000000 vector130
+801064ff g       .text	00000000 vector246
+80105b54 g       .text	00000000 vector9
+8010601f g       .text	00000000 vector142
+80105e7b g       .text	00000000 vector100
+801062e3 g       .text	00000000 vector201
+80106cb0 g     F .text	00000029 clearpteu
+801037e0 g     F .text	00000024 myproc
+80105650 g     F .text	00000074 tvinit
+80105d13 g       .text	00000000 vector60
+80105bc6 g       .text	00000000 vector23
+80101650 g     F .text	0000002b idup
+80106487 g       .text	00000000 vector236
+80102610 g     F .text	00000015 kbdintr
+80104fb0 g     F .text	00000156 sys_open
+8010644b g       .text	00000000 vector231
+80105d49 g       .text	00000000 vector66
+80105bfc g       .text	00000000 vector29
+80101960 g     F .text	000000f8 readi
+80105fcb g       .text	00000000 vector135
+80100810 g     F .text	000001ab consoleintr
+80103f90 g     F .text	0000007a kill
+80105dac g       .text	00000000 vector77
+80101510 g     F .text	000000bd ialloc
+801061e7 g       .text	00000000 vector180
+801154a4 g     O .bss	00000004 kpgdir
+80106337 g       .text	00000000 vector208
+80102810 g     F .text	000001ea cmostime
+80105af0 g     F .text	00000015 uartintr
+80105e69 g       .text	00000000 vector98
+80105e60 g       .text	00000000 vector97
+801061b7 g       .text	00000000 vector176
+8010628f g       .text	00000000 vector194
+80105c17 g       .text	00000000 vector32
+801154a8 g       .bss	00000000 end
+801062cb g       .text	00000000 vector199
+80105f9b g       .text	00000000 vector131
+80106547 g       .text	00000000 vector252
+80100ff0 g     F .text	0000011c filewrite
+80105b05 g       .text	00000000 vector0
+80104750 g     F .text	00000047 argint
+80100a10 g     F .text	00000345 exec
+80106043 g       .text	00000000 vector145
+80104b70 g     F .text	00000067 sys_write
+80104400 g     F .text	00000046 release
+801046e0 g     F .text	00000064 fetchstr
+80105eba g       .text	00000000 vector107
+80105c5f g       .text	00000000 vector40
+80103e40 g     F .text	000000ed wait
+80105e8d g       .text	00000000 vector102
+80109000 g     O .data	00001000 entrypgdir
+0010000c g       .text	00000000 _start
+80105cef g       .text	00000000 vector56
+80105d5b g       .text	00000000 vector68
+80105b3b g       .text	00000000 vector6
+8010a48c g       .data	00000000 _binary_initcode_end
+80100000 g       .text	00000000 multiboot_header
+80105f83 g       .text	00000000 vector129
+80103aa0 g     F .text	00000096 scheduler
+80101bb0 g     F .text	000000a9 dirlookup
+801062b3 g       .text	00000000 vector197
+80100e40 g     F .text	000000cc fileclose
+80102ba0 g     F .text	00000066 begin_op
+80106097 g       .text	00000000 vector152
+80106c90 g     F .text	0000001a kvmalloc
+8010643f g       .text	00000000 vector230
+80104570 g     F .text	0000005b strncmp
+80105c44 g       .text	00000000 vector37
+80106313 g       .text	00000000 vector205
+80106103 g       .text	00000000 vector161
+80114c60 g     O .bss	00000034 tickslock
+801033f0 g     F .text	00000108 pipewrite
+801045d0 g     F .text	00000053 strncpy
+80105d76 g       .text	00000000 vector71
+80106ce0 g     F .text	000000f0 copyuvm
+8010ffc0 g     O .bss	00000994 ftable
+801060f7 g       .text	00000000 vector160
+801047a0 g     F .text	00000057 argptr
+8010638b g       .text	00000000 vector215
+801060d3 g       .text	00000000 vector157
+80104a90 g     F .text	00000066 sys_dup
+80105ee7 g       .text	00000000 vector112
+80100390 g     F .text	00000075 panic
+801036d0 g     F .text	00000045 forkret
+801061ff g       .text	00000000 vector182
+80105b6b g       .text	00000000 vector12
+801044a0 g     F .text	00000052 memcmp
+80102530 g     F .text	000000d6 kbdgetc
+80105ecc g       .text	00000000 vector109
+80105bab g       .text	00000000 vector20
+80103980 g     F .text	00000112 fork
+80105cd4 g       .text	00000000 vector53
+80105b99 g       .text	00000000 vector18
+0000008a g       *ABS*	00000000 _binary_entryother_size
+80112780 g     O .bss	00000580 cpus
+80104170 g     F .text	0000003a releasesleep
+80105e4e g       .text	00000000 vector95
+80104310 g     F .text	00000030 holding
+801109c0 g     O .bss	0000001c sb
+80104340 g     F .text	000000b1 acquire
+8010640f g       .text	00000000 vector226
+80101f00 g     F .text	00000014 nameiparent
+80105cb0 g       .text	00000000 vector49
+80105c83 g       .text	00000000 vector44
+8011267c g     O .bss	00000004 lapic
+80105db5 g       .text	00000000 vector78
+8010562a g       .text	00000000 alltraps
+80106193 g       .text	00000000 vector173
+80105f14 g       .text	00000000 vector117
+80105dd9 g       .text	00000000 vector82
+801063df g       .text	00000000 vector222
+80105b4d g       .text	00000000 vector8
+80106073 g       .text	00000000 vector149
+801015d0 g     F .text	0000007f iupdate
+80108000 g       .data	00000000 data
+80104450 g     F .text	0000004d memset
+80106457 g       .text	00000000 vector232
+80102ea0 g     F .text	0000011f main
+801067c0 g     F .text	00000012 switchkvm
+80105eb1 g       .text	00000000 vector106
+801063c7 g       .text	00000000 vector220
+80105e21 g       .text	00000000 vector90
+8010611b g       .text	00000000 vector163
+8010646f g       .text	00000000 vector234
+80102d70 g     F .text	000000d0 log_write
+80104110 g     F .text	00000052 acquiresleep
+80104dd0 g     F .text	000001d6 sys_unlink
+80105d25 g       .text	00000000 vector62
+80105bd8 g       .text	00000000 vector25
+801062bf g       .text	00000000 vector198
+80105f2f g       .text	00000000 vector120
+8010a48c g       .data	00000000 _binary_entryother_start
+801023f0 g     F .text	00000063 kinit1
+80105cb9 g       .text	00000000 vector50
+80105b80 g       .text	00000000 vector15
+8010608b g       .text	00000000 vector151
+80105de2 g       .text	00000000 vector83
+80105e18 g       .text	00000000 vector89
+80105e0f g       .text	00000000 vector88
+80105700 g     F .text	0000027c trap
+80105600 g     F .text	0000002a sys_uptime
+801061db g       .text	00000000 vector179
+80105c29 g       .text	00000000 vector34
+80105c95 g       .text	00000000 vector46
+80105fbf g       .text	00000000 vector134
+801063eb g       .text	00000000 vector223
+80114ca0 g     O .bss	00000800 idt
+801063af g       .text	00000000 vector218
+80103720 g     F .text	0000001a pinit
+80106b60 g     F .text	00000024 deallocuvm
+80106403 g       .text	00000000 vector225
+80102730 g     F .text	00000017 lapicid
+8010623b g       .text	00000000 vector187
+80103900 g     F .text	00000078 growproc
+801041b0 g     F .text	00000046 holdingsleep
+80112d00 g     O .bss	00000004 ncpu
+80105c05 g       .text	00000000 vector30
+80103810 g     F .text	000000ed userinit
+801000d0 g     F .text	000000cd bread
+80105f6e g       .text	00000000 vector127
+80103500 g     F .text	000000fc piperead
+801154a0 g     O .bss	00000004 ticks
+80106277 g       .text	00000000 vector192
+8010613f g       .text	00000000 vector166
+801009c0 g     F .text	00000043 consoleinit
+80105da3 g       .text	00000000 vector76
+80105d9a g       .text	00000000 vector75
+80102080 g     F .text	0000009c ideintr
+8010629b g       .text	00000000 vector195
+8010607f g       .text	00000000 vector150
+80105d01 g       .text	00000000 vector58
+80106517 g       .text	00000000 vector248
+80105f4a g       .text	00000000 vector123
+80105e57 g       .text	00000000 vector96
+80105c0e g       .text	00000000 vector31
+801062fb g       .text	00000000 vector203
+80105ffb g       .text	00000000 vector139
+801060a3 g       .text	00000000 vector153
+80106127 g       .text	00000000 vector164
+80104010 g     F .text	000000c0 procdump
+80105f38 g       .text	00000000 vector121
+80105ac0 g     F .text	00000022 uartputc
+80105b32 g       .text	00000000 vector5
+8010614b g       .text	00000000 vector167
+801060bb g       .text	00000000 vector155
+80106523 g       .text	00000000 vector249
+801001e0 g     F .text	0000008e brelse
+8010652f g       .text	00000000 vector250
+80105f53 g       .text	00000000 vector124
+80105ed5 g       .text	00000000 vector110
+80106307 g       .text	00000000 vector204
+80101680 g     F .text	000000d4 ilock
+801052b0 g     F .text	000000eb sys_exec
+80105fe3 g       .text	00000000 vector137
+8010a460 g       .data	00000000 _binary_initcode_start
+8010468b g       .text	00000000 swtch
+8010650b g       .text	00000000 vector247
+80105bbd g       .text	00000000 vector22
+801062ef g       .text	00000000 vector202
+80106730 g     F .text	00000082 seginit
+80101910 g     F .text	0000001f iunlockput
+80105d7f g       .text	00000000 vector72
+80105ce6 g       .text	00000000 vector55
+80105f65 g       .text	00000000 vector126
+80105d40 g       .text	00000000 vector65
+80105bf3 g       .text	00000000 vector28
+8010a516 g       .data	00000000 _binary_entryother_end
+80106163 g       .text	00000000 vector169
+801001a0 g     F .text	00000036 bwrite
+80106463 g       .text	00000000 vector233
+801056d0 g     F .text	00000027 idtinit
+80103c00 g     F .text	00000124 exit
+801054a0 g     F .text	00000009 sys_wait
+80105490 g     F .text	0000000f sys_exit
+80101e20 g     F .text	000000b2 dirlink
+0000002c g       *ABS*	00000000 _binary_initcode_size
+8010605b g       .text	00000000 vector147
+801040d0 g     F .text	00000033 initsleeplock
+80102000 g     F .text	00000071 ideinit
+80106970 g     F .text	000000b4 loaduvm
+80105e9f g       .text	00000000 vector104
+80105f0b g       .text	00000000 vector116
+80112d20 g     O .bss	00001f34 ptable
+801022d0 g     F .text	00000033 ioapicenable
+801042b0 g     F .text	0000005c popcli
+8010a008 g       .data	00000000 vectors
+80105ccb g       .text	00000000 vector52
+80105b92 g       .text	00000000 vector17
+80106217 g       .text	00000000 vector184
+80104670 g     F .text	0000001b strlen
+801053a0 g     F .text	000000d6 sys_pipe
+80101480 g     F .text	0000008b iinit
+80103220 g     F .text	00000016 picinit
+8010632b g       .text	00000000 vector207
+801068f0 g     F .text	00000073 inituvm
+8010625f g       .text	00000000 vector190
+801064ab g       .text	00000000 vector239
+80105e45 g       .text	00000000 vector94
+80105e3c g       .text	00000000 vector93
+80102b00 g     F .text	00000096 initlog
+80106247 g       .text	00000000 vector188
+80105ca7 g       .text	00000000 vector48
+80102120 g     F .text	000000fe iderw
+801063bb g       .text	00000000 vector219
+80106067 g       .text	00000000 vector148
+801063d3 g       .text	00000000 vector221
+801024c0 g     F .text	0000006e kalloc
+80110960 g     O .bss	00000050 devsw
+801054f0 g     F .text	00000010 sys_getpid
+80105dc7 g       .text	00000000 vector80
+8010617b g       .text	00000000 vector171
+801060af g       .text	00000000 vector154
+80105c3b g       .text	00000000 vector36
+80103240 g     F .text	00000105 pipealloc
+8010647b g       .text	00000000 vector235
+80105ea8 g       .text	00000000 vector105
+80105200 g     F .text	000000ac sys_chdir
+801109e0 g     O .bss	00001c54 icache
+8010604f g       .text	00000000 vector146
+8010626b g       .text	00000000 vector191
+80105e96 g       .text	00000000 vector103
+80105170 g     F .text	0000008c sys_mknod
+80102780 g     F .text	0000008d lapicstartap
+801067e0 g     F .text	00000106 switchuvm
+80104270 g     F .text	0000003c pushcli
+80102460 g     F .text	00000055 kinit2
+80105b64 g       .text	00000000 vector11
+80105b79 g       .text	00000000 vector14
+80100f10 g     F .text	00000047 filestat
+
+
