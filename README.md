@@ -5,7 +5,7 @@ I used [xv6 book](https://pdos.csail.mit.edu/6.828/2016/xv6/book-rev9.pdf) and [
 
 Each repository is the process or result of each lab. Please find more details from the README of each repository.
 
-- [Lab 0. Tutorial]()
-- [Lab 1. System Calls]()
-- [Lab 2. Scheduling](https://github.com/KimSeoYe/xv6_study/blob/main/Lab2_scheduling/README.md)
-- [Lab 3. Memory Management]()
+- [Lab 0. Tutorial](https://github.com/KimSeoYe/xv6_study/tree/main/Lab0_tutorial#readme)
+- [Lab 1. System Calls](https://github.com/KimSeoYe/xv6_study/tree/main/Lab1_systemCalls#readme)
+- [Lab 2. Scheduling](https://github.com/KimSeoYe/xv6_study/tree/main/Lab2_scheduling#readme)
+- [Lab 3. Memory Management](https://github.com/KimSeoYe/xv6_study/tree/main/Lab3_memoryManagement#readme)

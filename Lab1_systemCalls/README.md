@@ -38,4 +38,4 @@ To implement a new system call,
 
 ---
 
-Please find a detailed description in Korian at [here](https://github.com/KimSeoYe/xv6_study/blob/main/Lab1_systemCalls/xv6_Lab1_syscall.pdf)
+Please find a detailed description in Korean at [here](https://github.com/KimSeoYe/xv6_study/blob/main/Lab1_systemCalls/xv6_Lab1_syscall.pdf)
