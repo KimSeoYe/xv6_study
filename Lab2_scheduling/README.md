@@ -1,6 +1,8 @@
 # Lab 2. Scheduling
 
-**Goal** : Changing a simple round-robin scheduler to a priority scheduler
+### Goal
+
+Changing a simple round-robin scheduler to a priority scheduler
 
 ### 0. Add a priority value to each process
 
