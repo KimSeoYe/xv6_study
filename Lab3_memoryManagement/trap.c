@@ -78,6 +78,21 @@ trap(struct trapframe *tf)
     lapiceoi();
     break;
 
+  case T_PGFLT:
+    //cprintf("page fault!\n") ;
+
+    //uint cr2 = rcr2() ;
+    //cprintf("cr2: %p | %p\n", PGROUNDUP(cr2), STACKTOP - PGSIZE * curproc->st_sz) ;
+    if (rcr2() < STACKTOP - PGSIZE * myproc()->st_sz) {
+	cprintf("stack overflow\n") ;
+	allocuvm(myproc()->pgdir, STACKTOP - PGSIZE * (myproc()->st_sz + 1), STACKTOP - PGSIZE * myproc()->st_sz) ;
+    	myproc()->st_sz ++ ;
+	lapiceoi() ;
+    	break;
+    }
+    else break ;
+    
+
   //PAGEBREAK: 13
   default:
     if(myproc() == 0 || (tf->cs&3) == 0){
